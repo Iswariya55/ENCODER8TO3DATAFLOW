@@ -19,6 +19,7 @@ The 8 to 3 line Encoder is also known as Octal to Binary Encoder. In 8 to 3 line
 Figure 01  Block Diagram of Encoder 8 * 3
 
 **Truth Table**
+
 ![WhatsApp Image 2024-12-10 at 17 43 53_4e5fc9f8](https://github.com/user-attachments/assets/115a853f-e3cf-439d-a6d3-18a31f28dab4)
 
 ![image](https://github.com/naavaneetha/ENCODER8TO3DATAFLOW/assets/154305477/35496b14-ae6e-4cd1-9abd-d6736b576575)
@@ -51,6 +52,15 @@ Figure 02  Encoder 8 * 3
 
 Developed by:ishwarya  RegisterNumber:24900725
 */
+
+ module enc(Y,A);
+ input [0:7]Y;
+ output [2:0]A;
+ assign A[2]=(Y[4]|Y[5]|Y[6]|Y[7]);
+ assign A[1]=(Y[2]|Y[3]|Y[6]|Y[7]);
+ assign A[0]=(Y[1]|Y[3]|Y[5]|Y[7]);
+ endmodule
+ 
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 ![WhatsApp Image 2024-12-08 at 14 33 18_7259fa7f](https://github.com/user-attachments/assets/84e15d58-ca42-4f6b-b1c8-b6c098750433)
