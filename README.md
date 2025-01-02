@@ -53,14 +53,8 @@ Figure 02  Encoder 8 * 3
 Developed by:ishwarya  RegisterNumber:24900725
 */
 
- module enc(Y,A);
- input [0:7]Y;
- output [2:0]A;
- assign A[2]=(Y[4]|Y[5]|Y[6]|Y[7]);
- assign A[1]=(Y[2]|Y[3]|Y[6]|Y[7]);
- assign A[0]=(Y[1]|Y[3]|Y[5]|Y[7]);
- endmodule
- 
+![Screenshot 2025-01-02 165907](https://github.com/user-attachments/assets/88314f35-26a2-441a-b94e-7b4a87e76765)
+
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
